@@ -1,0 +1,33 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UserInfoManager.h"
+#import "MyControll.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "UserInfoManager.h"
+#import "JSON.h"
+#import "ImageDownManager.h"
+#import "UMSocial.h"
+#endif
+
+
+#define   WIDTH  self.view.frame.size.width
+#define   HEIGHT self.view.frame.size.height
+#define   vHEIGHT  self.frame.size.height
+#define   vWIDTH  self.frame.size.width
+
+#define SERVER_URL @"http://115.28.37.140/zhuama/web/home/index/"
+#define APPKEY @"54b64252fd98c5bcfa0010e2"
